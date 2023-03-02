@@ -10,5 +10,69 @@
 
     font-size: 15px;
     font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400px;
 }
 
+body{
+    background-color: rgb(255, 255, 255)
+}
+
+.container{
+    background-color: var(--azul-bem-escuro);
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.icone-estrela{
+    background-color: var(--azul-escuro);
+    border-radius: 50%;
+    padding: 0.5em;
+}
+
+.titulo{
+    color: var(--branco);
+    font-weight: 700px;
+}
+
+.descricao{
+    color: var(--cinza);
+}
+
+form{
+    text-align: center;
+}
+
+.lista-notas{
+    margin: 2.5em 0;
+}
+
+.nota-input{
+    display: none;
+}
+
+.nota-label{
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    padding: 1em;
+    border-radius: 100%;
+    margin: 0 0.5em;
+    
+
+}
+
+.botao-enviar{
+    max-width: 100vh;
+    border-radius: 5%;
+    background-color: var(--laranja-primario);
+    color: var(--branco);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.5em;
+    width: 100%;
+}
+
+@media screen {
+    
+}
