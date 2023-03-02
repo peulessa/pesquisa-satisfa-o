@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap');
+
+:root{
+    --laranja-primario:hsl(25, 97%, 53%);
+    --branco: hsl(0, 0%, 100%);
+    --cinza-claro: hsl(217, 12%, 63%);
+    --cinza: hsl(216, 12%, 54%);
+    --azul-escuro: hsl(213, 19%, 18%);
+    --azul-bem-escuro: hsl(216, 12%, 8%);
+
+    font-size: 15px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
