@@ -1,26 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
 
 :root{
     --laranja-primario:hsl(25, 97%, 53%);
     --branco: hsl(0, 0%, 100%);
     --cinza-claro: hsl(217, 12%, 63%);
     --cinza: hsl(216, 12%, 54%);
-    --azul-escuro: hsl(213, 19%, 18%);
-    --azul-bem-escuro: hsl(216, 12%, 8%);
+    --azul-escuro: hsl(214, 20%, 21%);
+    --azul-bem-escuro: hsl(216, 13%, 15%);
 
     font-size: 15px;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Overpass', sans-serif;
     font-weight: 400px;
 }
 
 body{
-    background-color: rgb(255, 255, 255)
+    background-color: rgb(6, 6, 6)
 }
 
 .container{
     background-color: var(--azul-bem-escuro);
-    padding: 1em;
-    border-radius: 1em;
+    padding: 1.5em;
+    border-radius: 1.5em;
+    
 }
 
 .icone-estrela{
@@ -43,36 +44,92 @@ form{
 }
 
 .lista-notas{
-    margin: 2.5em 0;
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+    column-gap: 1em;
 }
 
-.nota-input{
-    display: none;
-}
-
-.nota-label{
-    background-color: var(--azul-escuro);
-    color: var(--branco);
-    padding: 1em;
+.botao-lista{
     border-radius: 100%;
-    margin: 0 0.5em;
-    
+    padding: 0.7em;
+    width: 45px;
+    height: 45px;
+    border: none;
+    background-color: var(--azul-escuro);
+    color: var(--cinza);
+    cursor: pointer;
+    margin: 1.5em 0;
+}
 
+.botao-lista:hover{
+    background-color: var(--laranja-primario);
+    color: var(--branco);
+}
+
+.ativo{
+    border-radius: 100%;
+    padding: 0.7em;
+    width: 45px;
+    height: 45px;
+    border: none;
+    background-color: var(--laranja-primario);
+    color: var(--branco);
+    cursor: pointer;
+    margin: 1.5em 0;
 }
 
 .botao-enviar{
-    max-width: 100vh;
-    border-radius: 5%;
+    border-radius: 10%;
     background-color: var(--laranja-primario);
     color: var(--branco);
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 20px;
-    font-weight: bold;
+    font-family: 'Overpass', sans-serif;
+    font-size: 17px;
+    font-weight: 650;
     text-transform: uppercase;
     padding: 0.5em;
-    width: 100%;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    width: 100%
 }
 
-@media screen {
-    
+.botao-enviar:hover{
+    background-color: var(--branco);
+    color: var(--laranja-primario);
+}
+
+/************* PAGINA DE OBRIGADO **********/
+
+.obrigado{
+    text-align: center;
+    display: none;
+}
+
+.imagem-obrigado{
+    margin: 1em 0;
+}
+
+.descricao-nota{
+    background-color: var(--azul-escuro);
+    background-size: auto;
+    color: var(--laranja-primario);
+    padding: 0.3em;
+    border-radius: 1em;
+}
+
+/************** DESKTOP ********************/
+
+@media screen and (min-width:1440px) {
+    body{
+        display: flex;
+        justify-content: center;
+    }
+
+    .container{
+        max-width: 20%;
+        margin-top: 5em;
+    }
 }

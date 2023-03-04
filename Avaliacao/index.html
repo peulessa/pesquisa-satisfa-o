@@ -9,31 +9,41 @@
   </head>
 
   <body>
-    <div class="container">
+    <div class="container avaliacao">
       <img src="/Avaliacao/images/icon-star.svg" alt="Ícone de Estrela" class="icone-estrela">
       <h2 class="titulo">Como foi nosso suporte?</h2>
       <p class="descricao">Conte-nos como foi nosso atendimento na sua solicitação de suporte. Todos os feedbacks são importantes e nos ajudam a melhorar para    você!</p>
 
       <form action="">
-        <div class="lista-notas">  
-          <input type="button" name="nota" id="nota" class="nota-input">
-          <label for="nota" class="nota-label">1</label>
+        <ul class="lista-notas">  
+          <li class="item-lista-notas">
+            <input type="button" class="botao-lista" value="1"></input>
+          </li>
+          <li class="item-lista-notas">
+            <input type="button" class="botao-lista" value="2"></input>
+          </li>
+          <li class="item-lista-notas">
+            <input type="button" class="botao-lista" value="3"></input>
+          </li>
+          <li class="item-lista-notas">
+            <input type="button" class="botao-lista" value="4"></input>
+          </li>
+          <li class="item-lista-notas">
+            <input type="button" class="botao-lista" value="5"></input>
+          </li>
+        </ul>
 
-          <input type="button" name="nota" id="nota" class="nota-input">
-          <label for="nota" class="nota-label">2</label>
-
-          <input type="button" name="nota" id="nota" class="nota-input">
-          <label for="nota" class="nota-label">3</label>
-
-          <input type="button" name="nota" id="nota" class="nota-input">
-          <label for="nota" class="nota-label">4</label>
-
-          <input type="button" name="nota" id="nota" class="nota-input">
-          <label for="nota" class="nota-label">5</label>
-        </div>
-
-        <input type="submit" class="botao-enviar">
+        <input type="button" class="botao-enviar" value="enviar">
     </form>
-    </div>  
+    </div>
+
+    <div class="container obrigado">
+      <img src="images/illustration-thank-you.svg" alt="Imagem de um celular" class="imagem-obrigado">
+      <p class="descricao-nota">Você selecionou <strong class="valor-nota"></strong> de <strong class="total-nota"></strong></p>
+      <h2 class="titulo">Obrigado!</h2>
+      <p class="descricao">Agradecemos o tempo que você tirou para votar. Se você precisar de mais ajuda, não hesite em dar um toque em nós!</p>
+    </div>
+
+    <script src="main.js"></script>
   </body>
 </html>
